@@ -13,11 +13,17 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
   kafka:
     bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
 
 server:
   port: 9050
 
-kafka.topic.user-random-topic: user-random-topic
+kafka.topic:
+  user-random-topic: user-random-topic
+  user-created-topic: user-created-topic
 
