@@ -9,6 +9,7 @@ public record UserCreatedEvent(
      * <p>
      * java.lang.IllegalStateException
      Caused by : org.apache.kafka.common.errors.RecordDeserializationException : Error deserializing VALUE for partition ...
-     Caused by : org.springframework.messaging.converter.MessageConversionException : failed to resolve class name. Class not found [com.example.learnKafka.user_service.event.UserCreatedEvent]
+     Caused by : org.springframework.messaging.converter.MessageConversionException : failed to resolve class name.
+                    Class not found [com.example.learnKafka.user_service.event.UserCreatedEvent]
 **/
      }
