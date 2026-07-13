@@ -17,12 +17,12 @@ public class User {
     Long id;
 
     String email;
-    String name;
+    String fullName;
 
     public static User of(CreateUserRequestDto dto){
         User user = new User();
         user.setEmail(dto.email());
-        user.setName(dto.name());
+        user.setFullName(dto.fullName());
         return user;
     }
 }

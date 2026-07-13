@@ -35,6 +35,6 @@ public class UserController {
     @PostMapping
     public ResponseEntity<String> createUser(@RequestBody CreateUserRequestDto userRequestDto){
         userService.createUser(userRequestDto);
-        return ResponseEntity.ok("User is created with name "+ userRequestDto.name());
+        return ResponseEntity.ok("User is created with name "+ userRequestDto.fullName());
     }
 }
